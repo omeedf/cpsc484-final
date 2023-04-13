@@ -1,5 +1,4 @@
-// we're display 2 but that one was down when i coded this so i just used display 1 for now -helen
-var host = "cpsc484-01.yale.internal:8888";
+var host = "cpsc484-02.yale.internal:8888";
 
 $(document).ready(function () {
     frames.start();
