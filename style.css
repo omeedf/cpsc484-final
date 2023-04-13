@@ -36,3 +36,59 @@ html, body {
     grid-column: 2/3;
     grid-row: 2/3;
   }
+   /*Chai button*/
+  button.mbtn.bottom.left {
+    padding:0.6em 2em;
+    border-radius: 8px;
+    color:#fff;
+    background-color:#1976d2;
+    font-size:1.1em;
+    border:0;
+    cursor:pointer;
+    margin:1em;
+    top: 700px;
+    right: 400px;
+  }
+
+  button.mbtn.bottom.right {
+    padding:0.6em 2em;
+    border-radius: 8px;
+    color:#fff;
+    background-color:#1976d2;
+    font-size:1.1em;
+    border:0;
+    cursor:pointer;
+    margin:1em;
+    position: absolute;
+    top: 700px;
+    left: 400px;
+  }
+
+
+  /* button.mbtn.top.right {
+    padding:0.6em 2em;
+    border-radius: 8px;
+    color:#fff;
+    background-color:#1976d2;
+    font-size:1.1em;
+    border:0;
+    cursor:pointer;
+    margin:1em;
+    position: absolute;
+    top: 400px;
+    right: 10px;
+  }
+  button.mbtn.top.left {
+    padding:0.6em 2em;
+    border-radius: 8px;
+    color:#fff;
+    background-color:#1976d2;
+    font-size:1.1em;
+    border:0;
+    cursor:pointer;
+    top: 400px;
+    right: 200px;
+  } */
+
+  
+  
