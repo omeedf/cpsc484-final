@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: tan;
+    background-color: lightblue;
   }
 
   .container {
@@ -46,8 +46,9 @@ html, body {
     border:0;
     cursor:pointer;
     margin:1em;
-    top: 700px;
-    right: 400px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
   }
 
   button.mbtn.bottom.right {
@@ -59,13 +60,13 @@ html, body {
     border:0;
     cursor:pointer;
     margin:1em;
-    position: absolute;
-    top: 700px;
-    left: 400px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
   }
 
 
-  /* button.mbtn.top.right {
+  button.mbtn.top.right {
     padding:0.6em 2em;
     border-radius: 8px;
     color:#fff;
@@ -74,10 +75,11 @@ html, body {
     border:0;
     cursor:pointer;
     margin:1em;
-    position: absolute;
-    top: 400px;
-    right: 10px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
   }
+
   button.mbtn.top.left {
     padding:0.6em 2em;
     border-radius: 8px;
@@ -86,18 +88,16 @@ html, body {
     font-size:1.1em;
     border:0;
     cursor:pointer;
-    top: 400px;
-    right: 200px;
-  } */
-
-  
-  
+    position: fixed;
+    top: 15px;
+    left: 15px;
+  }
 
   #start-button {
     margin-top: 20px;
     color: white;
     font-size: 25px;
-    background-color: rgb(163, 74, 11);
+    background-color: rgb(192, 95, 222);
     border-radius: 5px;
     border-style: solid;
     border-color: black;
