@@ -10,20 +10,61 @@
   </head>
 
   <body>
-    <div id="canvas-container"></div>
-    <div id="kinect-window">
-        <img class="twod" height="400px"/>
-    </div>
-    <div id="title">
-        <h1><center>Let's Make Chai!</center></h1>
-        <h2><center>HCI Final Project</center></h2>
-        <h3><center>Sukesh, Megha, Helen, & Omeed</center></h3>
-    
-    <div id="teacup">
+    <div id="start_page">
+      <br><br>
+      <h1><center>Let's Make Chai!</center></h1>
+      <h2><center>HCI Final Project</center></h2>
+      <h3><center>Sukesh, Megha, Helen, & Omeed</center></h3>
       <center><img src="images/teacup.png"></center>
-    </div> 
-      
-      <center><input type="button" value="Start" id="start-button" onclick="location.href='tea_making.html'"/></center>
+      <br>
+      <b><center><h2 id="start_text">Raise Both Hands to Start</h2></center></b>
+    </div>
+
+    <div id="tea_page_1">
+      <br><br>
+      <center><h2>Move Right Hand to the Right to Add Tea</h2></center>
+      <div id="starfish_container">
+        <center><img src="images/starfish.webp" width="125"></center>
+      </div>
+      <center><img src="images/empty_teacup.png" width="500"></center>
+    </div>
+
+    <div id="tea_page_2">
+      <br><br>
+      <center><h2>Move Left Hand to the Left to Boil</h2></center>
+      <div id="starfish_container">
+        <center><img src="images/starfish.webp" width="125"></center>
+      </div>
+      <center><img src="images/teacup_tea.png" width="500"></center>
+    </div>
+
+    <div id="tea_page_3">
+      <br><br>
+      <center><h2>Squat to Add Sugar and Milk</h2></center>
+      <div id="starfish_container">
+        <center><img src="images/starfish.webp" width="125"></center>
+      </div>
+      <center><img src="images/steam.png" width="500"></center>
+    </div>
+
+    <div id="tea_page_4">
+      <br><br>
+      <center><h2>Done! Jump to Get Recipe!</h2></center>
+      <div id="starfish_container">
+        <center><img src="images/milk.png" width="75"></center>
+      </div>
+      <center><img src="images/sugar.png" width="500"></center>
+    </div>
+
+    <div id="final_page">
+      <br><br>
+      <center><h1>Get Your Chai Recipe!</h1></center>
+      <div id="starfish_container">
+        <center><img src="images/starfish.webp" width="75"></center>
+      </div>
+      <br><br>
+      <center><img src="images/frame.png" width="500"></center>
+    </div>
 
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="main.js" type="text/javascript"></script>

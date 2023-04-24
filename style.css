@@ -11,96 +11,15 @@ html, body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px 1fr 200px;
   }
-
-  #start-button {
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: white;
-    width: 100px;
-    height: 25px;
+  
+  #start_text {
+    background-color: lightgreen;
+    height: 5%;
+    width: 40%;
+    padding-top: 3%;
+    padding-bottom: 2%;
   }
 
-  canvas {
-    display: block;
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  #kinect-window {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-   /*Chai button*/
-  button.mbtn.bottom.left {
-    padding:0.6em 2em;
-    border-radius: 8px;
-    color:#fff;
-    background-color:#1976d2;
-    font-size:1.1em;
-    border:0;
-    cursor:pointer;
-    margin:1em;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-  }
-
-  button.mbtn.bottom.right {
-    padding:0.6em 2em;
-    border-radius: 8px;
-    color:#fff;
-    background-color:#1976d2;
-    font-size:1.1em;
-    border:0;
-    cursor:pointer;
-    margin:1em;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-  }
-
-
-  button.mbtn.top.right {
-    padding:0.6em 2em;
-    border-radius: 8px;
-    color:#fff;
-    background-color:#1976d2;
-    font-size:1.1em;
-    border:0;
-    cursor:pointer;
-    margin:1em;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-  }
-
-  button.mbtn.top.left {
-    padding:0.6em 2em;
-    border-radius: 8px;
-    color:#fff;
-    background-color:#1976d2;
-    font-size:1.1em;
-    border:0;
-    cursor:pointer;
-    position: fixed;
-    top: 15px;
-    left: 15px;
-  }
-
-  #start-button {
-    margin-top: 20px;
-    color: white;
-    font-size: 25px;
-    background-color: rgb(192, 95, 222);
-    border-radius: 5px;
-    border-style: solid;
-    border-color: black;
-    width: 200px;
-    height: 75px;
+  #starfish_container {
+    padding-left: 45%;
   }
