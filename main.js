@@ -63,7 +63,7 @@ var twod = {
         $('img.twod').attr("src", 'data:image/pnjpegg;base64,' + twod.src);
     },
 };
-
+// variables that tracks the coordinate locations
 let right_y = 0;
 let left_y = 0;
 let head_y = 0;
@@ -74,7 +74,7 @@ let body_number = 0;
 
 let stage = 0;
 
-// get the height and width of the diaply
+// get the height and width of the display
 height = $(window).height();
 width = $(window).width();
 
@@ -161,7 +161,7 @@ function boilFade () {
         window.location = "tea_page_4.html";
     }, 2000);
 }
-
+// transitions to next consecutive page
 function movement() {
     console.log("window location", window.location)
     console.log("window.location.pathname", window.location.pathname)
