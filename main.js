@@ -166,31 +166,31 @@ function movement() {
         $(".error-messages").text("").fadeIn();
     }
 
-    if(window.location == "/pages/whale_page.html") {
+    if(window.location.pathname == "/pages/whale_page.html") {
         setTimeout(() => {
             window.location = "/pages/whale_page_2.html";
         }, 5000);
 
-    } else if(window.location == "/pages/whale_page_2.html") {
+    } else if(window.location.pathname == "/pages/whale_page_2.html") {
         setTimeout(() => {
             window.location = "/pages/tea_page_1.html";
         }, 5000);
 
-    } else if(window.location == "/pages/tea_page_1.html" && right_x < -1000) {
+    } else if(window.location.pathname == "/pages/tea_page_1.html" && right_x < -1000) {
         moveChai();
         window.location = "/pages/tea_page_3.html";
 
-    } else if(window.location == "/pages/tea_page_3.html" && head_y > 700) {
+    } else if(window.location.pathname == "/pages/tea_page_3.html" && head_y > 700) {
         setTimeout(moveSugar, 3000);
         setTimeout(moveMilk, 3000);
         window.location = "/pages/tea_page_2.html";
 
-    } else if(window.location == "/pages/tea_page_2.html" && head_y > 700) {
+    } else if(window.location.pathname == "/pages/tea_page_2.html" && head_y > 700) {
         setTimeout(() => {
             boilFade();
             window.location = "/pages/tea_page_4.html";
         }, 4000);
-    } else if(window.location == "/pages/tea_page_4.html" && head_y < -1000) {
+    } else if(window.location.pathname == "/pages/tea_page_4.html" && head_y < -1000) {
         final_page();
     }
 
