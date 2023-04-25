@@ -103,6 +103,7 @@ function moveChai () {
             clearInterval(fadeEffect);
         }
     }, 200);
+    window.location = "tea_page_3.html";
 }
 
 function moveSugar () {
@@ -137,6 +138,7 @@ function moveMilk () {
             clearInterval(fadeEffect);
         }
     }, 200);
+    window.location = "tea_page_2.html";
 }
 
 function boilFade () {
@@ -151,6 +153,7 @@ function boilFade () {
             clearInterval(fadeEffect);
         }
     }, 200);
+    window.location = "tea_page_4.html";
 }
 
 function movement() {
@@ -183,103 +186,19 @@ function movement() {
         }, 5000);
 
     } else if(document.URL.includes("tea_page_1.html") && right_x < -1000) {
-        moveChai();
-        window.location = "tea_page_4.html";
+        moveChai()
+        // window.location = "tea_page_3.html";
 
-    } else if(document.URL.includes("tea_page_4.html") && head_y > 700) {
+    } else if(document.URL.includes("tea_page_3.html") && head_y > 700) {
         setTimeout(moveSugar, 3000);
         setTimeout(moveMilk, 3000);
-        window.location = "tea_page_2.html";
+        // window.location = "tea_page_2.html";
 
-    } else if(document.URL.includes("tea_page_4.html") && head_y > 700) {
+    } else if(document.URL.includes("tea_page_2.html") && head_y > 700) {
         setTimeout(() => {
             boilFade();
-            window.location = "tea_page_4.html";
         }, 4000);
     } else if(document.URL.includes("tea_page_4.html") && head_y < -1000) {
         final_page();
     }
-
-
-    // if(right_y < head_y && left_y < head_y) {
-    //     document.getElementById("whale_page").style.display = 'none';
-    //     document.getElementById("whale_page_2").style.display = 'none';
-    //     document.getElementById("start_page").style.display = 'none';
-    //     document.getElementById("tea_page_1").style.display = 'block';
-    //     document.getElementById("tea_page_2").style.display = 'none';
-    //     document.getElementById("tea_page_3").style.display = 'none';
-    //     document.getElementById("tea_page_4").style.display = 'none';
-    //     document.getElementById("final_page").style.display = 'none';
-    // }
-    // var chai = document.getElementById("chaipic");
-    // chai.style.top = right_y * (300)
-    // chai.style.right = right_x * (700)
-
-    // // make sure that a person is in the center of the page
-    // if(head_x > 130 && head_x < 215 && head_y > 60 && head_y <= 300) {
-    //     document.getElementById("start_page").style.display = 'block';
-    //     document.getElementById("tea_page_1").style.display = 'none';
-    //     document.getElementById("tea_page_2").style.display = 'none';
-    //     document.getElementById("tea_page_3").style.display = 'none';
-    //     document.getElementById("tea_page_4").style.display = 'none';
-    //     document.getElementById("final_page").style.display = 'none';
-    // }
-
-    // if(head_x > 130 && head_x < 215 && head_y > 60 && head_y <= 300) {
-    //     document.getElementById("start_page").style.display = 'block';
-    //     document.getElementById("tea_page_1").style.display = 'none';
-    //     document.getElementById("tea_page_2").style.display = 'none';
-    //     document.getElementById("tea_page_3").style.display = 'none';
-    //     document.getElementById("tea_page_4").style.display = 'none';
-    //     document.getElementById("final_page").style.display = 'none';
-    // }
-
-    // if(right_y < head_y && left_y < head_y) {
-    //     document.getElementById("start_page").style.display = 'none';
-    //     document.getElementById("tea_page_1").style.display = 'block';
-    //     document.getElementById("tea_page_2").style.display = 'none';
-    //     document.getElementById("tea_page_3").style.display = 'none';
-    //     document.getElementById("tea_page_4").style.display = 'none';
-    //     document.getElementById("final_page").style.display = 'none';
-    // }
-
-    // //from first add tea page, move to boil page when right hand all the way to right
-    // if(right_x < -1000) {
-    //     document.getElementById("start_page").style.display = 'none';
-    //     document.getElementById("tea_page_1").style.display = 'none';
-    //     document.getElementById("tea_page_2").style.display = 'block';
-    //     document.getElementById("tea_page_3").style.display = 'none';
-    //     document.getElementById("tea_page_4").style.display = 'none';
-    //     document.getElementById("final_page").style.display = 'none';
-    // }
-
-    // //on second page, boil when left hand all the way to left and move to sugar/milk page
-    // if(left_x > 700) {
-    //     document.getElementById("start_page").style.display = 'none';
-    //     document.getElementById("tea_page_1").style.display = 'none';
-    //     document.getElementById("tea_page_2").style.display = 'none';
-    //     document.getElementById("tea_page_3").style.display = 'block';
-    //     document.getElementById("tea_page_4").style.display = 'none';
-    //     document.getElementById("final_page").style.display = 'none';
-    // }
-
-    // //on third page, add sugar and milk when squatting
-    // if(head_y > 700) {
-    //     document.getElementById("start_page").style.display = 'none';
-    //     document.getElementById("tea_page_1").style.display = 'none';
-    //     document.getElementById("tea_page_2").style.display = 'none';
-    //     document.getElementById("tea_page_3").style.display = 'none';
-    //     document.getElementById("tea_page_4").style.display = 'block';
-    //     document.getElementById("final_page").style.display = 'none';
-    // }
-
-    // //on final page, move to final page after jump
-    // if(head_y < -1000) {
-    //     document.getElementById("start_page").style.display = 'none';
-    //     document.getElementById("tea_page_1").style.display = 'none';
-    //     document.getElementById("tea_page_2").style.display = 'none';
-    //     document.getElementById("tea_page_3").style.display = 'none';
-    //     document.getElementById("tea_page_4").style.display = 'none';
-    //     document.getElementById("final_page").style.display = 'block';
-    // }
 }
