@@ -11,5 +11,15 @@ We tested and developed our project at TV 2, so our implementation may behave di
 None
 
 ### Collaboration Record
+Student Name and NetID: Megha Joshi (mj573)
+Contribution: 
 
+Student Name and NetID: Helen Zhou (hz449)
+Contribution:  
+
+Student Name and NetID: Sukesh Ram (sr2265)
+Contribution:  
+
+Student Name and NetID: Omeed Fallahi (of45)
+Contribution:  
 
