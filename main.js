@@ -199,11 +199,6 @@ function movement() {
             boilFade();
         }, 4000);
     } else if(document.URL.includes("tea_page_4.html") && head_y < -100) {
-        final_page();
-    }
-}
-
-function final_page() {
-    window.location = "final_page.html";
-    setTimeout(setup, 3000000);
+        window.location = "final_page.html";
+    } 
 }
