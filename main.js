@@ -80,8 +80,14 @@ width = $(window).width();
 
 function setup() {
     // Intro whale slide
-    window.location = "../index.html";
-    window.location.pathname == "../index.html"
+    if (document.URL.includes("final_page.html")) {
+
+    }
+    else {
+        window.location = "../index.html";
+        window.location.pathname == "../index.html";
+    }
+    
 }
 
 function moveChai () {
