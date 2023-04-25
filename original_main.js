@@ -80,12 +80,32 @@ width = $(window).width();
 
 function setup() {
     // Intro whale slide
-    window.location = "/pages/whale_page.html";
+    document.getElementById("whale_page").style.display = 'block';
+    document.getElementById("whale_page_2").style.display = 'none';
+    document.getElementById("start_page").style.display = 'none';
+    document.getElementById("tea_page_1").style.display = 'none';
+    document.getElementById("tea_page_2").style.display = 'none';
+    document.getElementById("tea_page_3").style.display = 'none';
+    document.getElementById("tea_page_4").style.display = 'none';
+    document.getElementById("final_page").style.display = 'none';
+    setTimeout(secondWhaleFunction, 3000);
 }
+    
+function secondWhaleFunction() {
+    // second whale slide
+    document.getElementById("whale_page").style.display = 'none';
+    document.getElementById("whale_page_2").style.display = 'block';
+    document.getElementById("start_page").style.display = 'none';
+    document.getElementById("tea_page_1").style.display = 'none';
+    document.getElementById("tea_page_2").style.display = 'none';
+    document.getElementById("tea_page_3").style.display = 'none';
+    document.getElementById("tea_page_4").style.display = 'none';
+    document.getElementById("final_page").style.display = 'none';
+    
+    // // moving chai
+    setTimeout(tea_page_1, 3000);
 
-function final_page() {
-    window.location = "/pages/final_page.html";
-    setTimeout(setup, 30000);
+    
 }
 
 function moveChai () {
@@ -152,6 +172,81 @@ function boilFade () {
     }, 200);
 }
 
+function tea_page_1() {
+    document.getElementById("whale_page").style.display = 'none';
+    document.getElementById("whale_page_2").style.display = 'none';
+    document.getElementById("start_page").style.display = 'none';
+    document.getElementById("tea_page_1").style.display = 'block';
+    document.getElementById("tea_page_2").style.display = 'none';
+    document.getElementById("tea_page_3").style.display = 'none';
+    document.getElementById("tea_page_4").style.display = 'none';
+    document.getElementById("final_page").style.display = 'none';
+    // setTimeout(moveChai, 3000);
+    if(right_x < -1000)
+        moveChai()
+        setTimeout(tea_page_2, 10000);
+    
+}
+
+function tea_page_3() {
+    document.getElementById("whale_page").style.display = 'none';
+    document.getElementById("whale_page_2").style.display = 'none';
+    document.getElementById("start_page").style.display = 'none';
+    document.getElementById("tea_page_1").style.display = 'none';
+    document.getElementById("tea_page_2").style.display = 'block';
+    document.getElementById("tea_page_3").style.display = 'none';
+    document.getElementById("tea_page_4").style.display = 'none';
+    document.getElementById("final_page").style.display = 'none';
+    setTimeout(boilFade, 3000);
+    setTimeout(tea_page_4, 10000);
+    
+}
+
+function tea_page_2() {
+    document.getElementById("whale_page").style.display = 'none';
+    document.getElementById("whale_page_2").style.display = 'none';
+    document.getElementById("start_page").style.display = 'none';
+    document.getElementById("tea_page_1").style.display = 'none';
+    document.getElementById("tea_page_2").style.display = 'none';
+    document.getElementById("tea_page_3").style.display = 'block';
+    document.getElementById("tea_page_4").style.display = 'none';
+    document.getElementById("final_page").style.display = 'none';
+    if(head_y > 700) {
+        setTimeout(moveSugar, 3000);
+        setTimeout(moveMilk, 3000);
+        setTimeout(tea_page_3, 10000);
+    }
+    
+}
+
+function tea_page_4() {
+    document.getElementById("whale_page").style.display = 'none';
+    document.getElementById("whale_page_2").style.display = 'none';
+    document.getElementById("start_page").style.display = 'none';
+    document.getElementById("tea_page_1").style.display = 'none';
+    document.getElementById("tea_page_2").style.display = 'none';
+    document.getElementById("tea_page_3").style.display = 'none';
+    document.getElementById("tea_page_4").style.display = 'block';
+    document.getElementById("final_page").style.display = 'none';
+    if(head_y < -1000) {
+        final_page()
+    }
+    
+    
+}
+
+function final_page() {
+    document.getElementById("whale_page").style.display = 'none';
+    document.getElementById("whale_page_2").style.display = 'none';
+    document.getElementById("start_page").style.display = 'none';
+    document.getElementById("tea_page_1").style.display = 'none';
+    document.getElementById("tea_page_2").style.display = 'none';
+    document.getElementById("tea_page_3").style.display = 'none';
+    document.getElementById("tea_page_4").style.display = 'none';
+    document.getElementById("final_page").style.display = 'block';
+    setTimeout(setup, 30000);
+}
+
 function movement() {
     // get the starfish to track hand movement
     var starfish = document.getElementById("starfish");
@@ -166,32 +261,11 @@ function movement() {
         $(".error-messages").text("").fadeIn();
     }
 
-    if(window.location == "/pages/whale_page.html") {
-        setTimeout(() => {
-            window.location = "/pages/whale_page_2.html";
-        }, 5000);
+    //from the starting page, move to first add tea page when both hands raised
 
-    } else if(window.location == "/pages/whale_page_2.html") {
-        setTimeout(() => {
-            window.location = "/pages/tea_page_1.html";
-        }, 5000);
-
-    } else if(window.location == "/pages/tea_page_1.html" && right_x < -1000) {
-        moveChai();
-        window.location = "/pages/tea_page_3.html";
-
-    } else if(window.location == "/pages/tea_page_3.html" && head_y > 700) {
-        setTimeout(moveSugar, 3000);
-        setTimeout(moveMilk, 3000);
-        window.location = "/pages/tea_page_2.html";
-
-    } else if(window.location == "/pages/tea_page_2.html" && head_y > 700) {
-        setTimeout(() => {
-            boilFade();
-            window.location = "/pages/tea_page_4.html";
-        }, 4000);
-    } else if(window.location == "/pages/tea_page_4.html" && head_y < -1000) {
-        final_page();
+    // Beginning slide
+    if(right_y < head_y && left_y < head_y) {
+        tea_page_1()
     }
 
 
