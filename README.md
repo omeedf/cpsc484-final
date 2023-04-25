@@ -6,7 +6,7 @@ For our project, users can utilize a web-app to take part in a quick and enjoyab
 
 
 ### Constraints from physical environment:
-We tested and developed our project at TV 2, so our implementation may behave differently in different locations or on different display setups. Our implementation is also contrained by the capabilities of the Kinect skeletal tracking system, which we rely on for user input.
+We tested and developed our project at TV 2, so our implementation may behave differently in different locations or on different display setups. Our implementation is also contrained by the capabilities of the Kinect skeletal tracking system, which we rely on for user input. Since we intended for this interaction to be for one person, it is also limited by number of people in front of the display, so for the best experience only one person should be in frame at once.
 
 ### Dependencies
 None
