@@ -81,6 +81,7 @@ width = $(window).width();
 function setup() {
     // Intro whale slide
     window.location = "/pages/whale_page.html";
+    window.location.pathname == "../pages/whale_page.html"
 }
 
 function final_page() {
@@ -153,11 +154,15 @@ function boilFade () {
 }
 
 function movement() {
+    console.log("window location", window.location)
+    console.log("window.location.pathname", window.location.pathname)
     // get the starfish to track hand movement
-    var starfish = document.getElementById("starfish");
-    starfish.style.top = right_y * (1080/720)
-    starfish.style.right = right_x * (1920/1280)
-    console.log("move to position", starfish.style.right, starfish.style.top)
+    // var starfish = document.getElementById("starfish");
+    // starfish.style.top = right_y * (1080/720)
+    // starfish.style.right = right_x * (1920/1280)
+    // console.log("move to position", starfish.style.right, starfish.style.top)
+
+    
 
     // this is a one player game, if body number is greater than 1 make a popup
     if (body_number > 1) {
@@ -166,31 +171,32 @@ function movement() {
         $(".error-messages").text("").fadeIn();
     }
 
-    if(window.location.pathname == "/pages/whale_page.html") {
+    if(document.URL.includes("whale_page.html")) {
+        console.log("IN HERE")
         setTimeout(() => {
-            window.location = "/pages/whale_page_2.html";
+            document.location.href = "../pages/whale_page_2.html";
         }, 5000);
 
-    } else if(window.location.pathname == "/pages/whale_page_2.html") {
+    } else if(document.URL.includes("whale_page_2.html")) {
         setTimeout(() => {
-            window.location = "/pages/tea_page_1.html";
+            window.location = "../pages/tea_page_1.html";
         }, 5000);
 
-    } else if(window.location.pathname == "/pages/tea_page_1.html" && right_x < -1000) {
+    } else if(document.URL.includes("tea_page_1.html") && right_x < -1000) {
         moveChai();
-        window.location = "/pages/tea_page_3.html";
+        window.location = "../pages/tea_page_3.html";
 
-    } else if(window.location.pathname == "/pages/tea_page_3.html" && head_y > 700) {
+    } else if(document.URL.includes("tea_page_3.html") && head_y > 700) {
         setTimeout(moveSugar, 3000);
         setTimeout(moveMilk, 3000);
-        window.location = "/pages/tea_page_2.html";
+        window.location = "../pages/tea_page_2.html";
 
-    } else if(window.location.pathname == "/pages/tea_page_2.html" && head_y > 700) {
+    } else if(document.URL.includes("tea_page_4.html") && head_y > 700) {
         setTimeout(() => {
             boilFade();
-            window.location = "/pages/tea_page_4.html";
+            window.location = "../pages/tea_page_4.html";
         }, 4000);
-    } else if(window.location.pathname == "/pages/tea_page_4.html" && head_y < -1000) {
+    } else if(document.URL.includes("tea_page_4.html") && head_y < -1000) {
         final_page();
     }
 
