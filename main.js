@@ -98,8 +98,9 @@ function moveChai () {
             clearInterval(fadeEffect);
         }
     }, 2000);
-    sleep(2000)
-    window.location = "tea_page_3.html";
+    setTimeout(() => {
+        window.location = "tea_page_3.html";
+    }, 2000);
 }
 
 function moveSugar () {
@@ -116,7 +117,6 @@ function moveSugar () {
             clearInterval(fadeEffect);
         }
     }, 2000);
-    sleep(2000)
     setTimeout(moveMilk, 3000);
 }
 
@@ -134,8 +134,9 @@ function moveMilk () {
             clearInterval(fadeEffect);
         }
     }, 2000);
-    sleep(2000)
-    window.location = "tea_page_2.html";
+    setTimeout(() => {
+        window.location = "tea_page_2.html";
+    }, 2000);
 }
 
 function boilFade () {
@@ -150,8 +151,9 @@ function boilFade () {
             clearInterval(fadeEffect);
         }
     }, 2000);
-    sleep(2000)
-    window.location = "tea_page_4.html";
+    setTimeout(() => {
+        window.location = "tea_page_4.html";
+    }, 2000);
 }
 
 function movement() {
