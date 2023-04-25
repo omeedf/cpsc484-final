@@ -80,8 +80,8 @@ width = $(window).width();
 
 function setup() {
     // Intro whale slide
-    window.location = "/pages/index.html";
-    window.location.pathname == "../pages/imdex.html"
+    window.location = "../index.html";
+    window.location.pathname == "../index.html"
 }
 
 function final_page() {
@@ -174,27 +174,27 @@ function movement() {
     if(document.URL.includes("index.html")) {
         console.log("IN HERE")
         setTimeout(() => {
-            document.location.href = "../pages/whale_page_2.html";
+            window.location = "pages/whale_page_2.html";
         }, 5000);
 
     } else if(document.URL.includes("whale_page_2.html")) {
         setTimeout(() => {
-            window.location = "../pages/tea_page_1.html";
+            window.location = "tea_page_1.html";
         }, 5000);
 
     } else if(document.URL.includes("tea_page_1.html") && right_x < -1000) {
         moveChai();
-        window.location = "../pages/tea_page_3.html";
+        window.location = "tea_page_4.html";
 
-    } else if(document.URL.includes("tea_page_3.html") && head_y > 700) {
+    } else if(document.URL.includes("tea_page_4.html") && head_y > 700) {
         setTimeout(moveSugar, 3000);
         setTimeout(moveMilk, 3000);
-        window.location = "../pages/tea_page_2.html";
+        window.location = "tea_page_2.html";
 
     } else if(document.URL.includes("tea_page_4.html") && head_y > 700) {
         setTimeout(() => {
             boilFade();
-            window.location = "../pages/tea_page_4.html";
+            window.location = "tea_page_4.html";
         }, 4000);
     } else if(document.URL.includes("tea_page_4.html") && head_y < -1000) {
         final_page();
