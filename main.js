@@ -181,8 +181,10 @@ function tea_page_1() {
     document.getElementById("tea_page_3").style.display = 'none';
     document.getElementById("tea_page_4").style.display = 'none';
     document.getElementById("final_page").style.display = 'none';
-    setTimeout(moveChai, 3000);
-    setTimeout(tea_page_2, 10000);
+    // setTimeout(moveChai, 3000);
+    if(right_x < -1000)
+        moveChai()
+        setTimeout(tea_page_2, 10000);
     
 }
 
@@ -209,9 +211,12 @@ function tea_page_2() {
     document.getElementById("tea_page_3").style.display = 'block';
     document.getElementById("tea_page_4").style.display = 'none';
     document.getElementById("final_page").style.display = 'none';
-    setTimeout(moveSugar, 3000);
-    setTimeout(moveMilk, 3000);
-    setTimeout(tea_page_3, 10000);
+    if(head_y > 700) {
+        setTimeout(moveSugar, 3000);
+        setTimeout(moveMilk, 3000);
+        setTimeout(tea_page_3, 10000);
+    }
+    
 }
 
 function tea_page_4() {
@@ -223,7 +228,11 @@ function tea_page_4() {
     document.getElementById("tea_page_3").style.display = 'none';
     document.getElementById("tea_page_4").style.display = 'block';
     document.getElementById("final_page").style.display = 'none';
-    setTimeout(final_page, 3000);
+    if(head_y < -1000) {
+        final_page()
+    }
+    
+    
 }
 
 function final_page() {
@@ -235,6 +244,7 @@ function final_page() {
     document.getElementById("tea_page_3").style.display = 'none';
     document.getElementById("tea_page_4").style.display = 'none';
     document.getElementById("final_page").style.display = 'block';
+    setTimeout(setup, 30000);
 }
 
 function movement() {
@@ -254,6 +264,11 @@ function movement() {
     //from the starting page, move to first add tea page when both hands raised
 
     // Beginning slide
+    if(right_y < head_y && left_y < head_y) {
+        tea_page_1()
+    }
+
+
     // if(right_y < head_y && left_y < head_y) {
     //     document.getElementById("whale_page").style.display = 'none';
     //     document.getElementById("whale_page_2").style.display = 'none';
