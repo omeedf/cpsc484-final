@@ -84,11 +84,6 @@ function setup() {
     window.location.pathname == "../index.html"
 }
 
-function final_page() {
-    window.location = "/pages/final_page.html";
-    setTimeout(setup, 30000);
-}
-
 function moveChai () {
     var chai = document.getElementById("chaipic");
     chai.style.top = 200
@@ -197,11 +192,16 @@ function movement() {
         setTimeout(moveMilk, 3000);
         // window.location = "tea_page_2.html";
 
-    } else if(document.URL.includes("tea_page_2.html") && head_y > 700) {
+    } else if(document.URL.includes("tea_page_2.html") && left_x > 1000) {
         setTimeout(() => {
             boilFade();
         }, 4000);
-    } else if(document.URL.includes("tea_page_4.html") && head_y < -1000) {
+    } else if(document.URL.includes("tea_page_4.html") && head_y < -100) {
         final_page();
     }
+}
+
+function final_page() {
+    window.location = "final_page.html";
+    setTimeout(setup, 30000);
 }
