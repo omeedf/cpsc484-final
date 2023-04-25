@@ -11,6 +11,103 @@ html, body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px 1fr 200px;
   }
+  .imgbox {
+      display: grid;
+      height: 100%;
+  }
+  .center-fit {
+      max-width: 100%;
+      max-height: 100vh;
+      margin: auto;
+  }
+
+  .topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+  }
+
+  /* #chaipic {
+    position: absolute;
+    top: 20%;
+    right: 0px;
+  } */
+
+  #stars {
+    position: absolute;
+    right: 5px;
+    top: 80px;
+  }
+  
+  #chaipic {
+    position: absolute;
+    right: 10px;
+    top: 80px;
+  }
+
+  #sugarpic {
+    position: absolute;
+    width: 300px;
+    left: 10px;
+    top: 20px;
+  }
+
+  #milkpic {
+    position: absolute;
+    width: 100px;
+    right: 10px;
+    top: 20px;
+  }
+
+  #boil_text {
+    background-color: rgb(229, 141, 86);
+    height: 10%;
+    width: 10%;
+    left: 10px;
+    top: 600px;
+    position:absolute;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 1%;
+    font-size: 40px;
+  }
+
+  #tea_page_1 {
+    background-color: lavender;
+  }
+
+  #tea_page_2 {
+    background-color: lavender;
+  }
+
+  #tea_page_3 {
+    background-color: lavender;
+  }
+
+  #tea_page_4 {
+    background-color: lavender;
+  }
+
+  #final_page {
+    background-color: lavenderblush;
+  }
+
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #left{
+    float: left;
+  }
+  #right{
+    float: right;
+  }
   
   #start_text {
     background-color: lightgreen;
@@ -20,6 +117,6 @@ html, body {
     padding-bottom: 2%;
   }
 
-  #starfish_container {
+  /* #starfish_container {
     padding-left: 45%;
-  }
+  } */
