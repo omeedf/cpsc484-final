@@ -180,16 +180,16 @@ function movement() {
             window.location = "tea_page_1.html";
         }, 5000);
 
-    } else if(document.URL.includes("tea_page_1.html") && right_x < -1000) {
+    } else if(document.URL.includes("tea_page_1.html") && right_x < -800) {
         moveChai()
         // window.location = "tea_page_3.html";
 
-    } else if(document.URL.includes("tea_page_3.html") && head_y > 700) {
+    } else if(document.URL.includes("tea_page_3.html") && head_y > 500) {
         setTimeout(moveSugar, 3000);
         setTimeout(moveMilk, 3000);
         // window.location = "tea_page_2.html";
 
-    } else if(document.URL.includes("tea_page_2.html") && left_x > 1000) {
+    } else if(document.URL.includes("tea_page_2.html") && left_x > 400) {
         setTimeout(() => {
             boilFade();
         }, 4000);
@@ -200,5 +200,5 @@ function movement() {
 
 function final_page() {
     window.location = "final_page.html";
-    setTimeout(setup, 30000);
+    setTimeout(setup, 3000000);
 }
