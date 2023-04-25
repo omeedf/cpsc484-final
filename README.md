@@ -14,17 +14,17 @@ None
 ### Collaboration Record
 Student Name and NetID: Megha Joshi (mj573)
 
-Contribution: 
+Contribution: I contributed to the design, brainstorming, coding, testing, and debugging of the project. I helped design and code the html, css, and bootstrap for index page and tea page 1. I also worked on the javascript portions and helped plan the structure of the kinect motion tracking aspect of the project. I helped test the project on the display and laptops and worked with my team to debug and solve some of the issues that arose such as weird background formatting, slide to slide transitions, problems with animations. 
 
 Student Name and NetID: Helen Zhou (hz449)
 
-Contribution:  
+Contribution:  I contributed to the design, brainstorming, coding, testing, and debugging of the project. I helped design and code the html, css, and bootstrap for tea page 2 and tea page 3. I also worked on the javascript portions and helped plan the structure of the kinect motion tracking aspect of the project. I helped test the project on the display and laptops and worked with my team to debug and solve some of the issues that arose such as weird background formatting, slide to slide transitions, problems with animations. 
 
 Student Name and NetID: Sukesh Ram (sr2265)
 
-Contribution:  
+Contribution: I contributed to the design, brainstorming, coding, testing, and debugging of the project. I helped design and code the html, css, and bootstrap for tea page 4 and whale_page. I also worked on the javascript portions and helped plan the structure of the kinect motion tracking aspect of the project. I helped test the project on the display and laptops and worked with my team to debug and solve some of the issues that arose such as weird background formatting, slide to slide transitions, problems with animations. 
 
 Student Name and NetID: Omeed Fallahi (of45)
 
-Contribution:  
+Contribution: I contributed to the design, brainstorming, coding, testing, and debugging of the project. I helped design and code the html, css, and bootstrap for whale page and final page. I figured out how to do the javascript portions and helped plan the structure of the kinect motion tracking aspect of the project. I helped test the project on the display and laptops and worked with my team to debug and solve some of the issues that arose such as weird background formatting, slide to slide transitions, problems with animations. 
 
