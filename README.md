@@ -26,5 +26,5 @@ Contribution: I contributed to the design, brainstorming, coding, testing, and d
 
 Student Name and NetID: Omeed Fallahi (of45)
 
-Contribution: I contributed to the design, brainstorming, coding, testing, and debugging of the project. I helped design and code the html, css, and bootstrap for whale page and final page. I figured out how to do the javascript portions and helped plan the structure of the kinect motion tracking aspect of the project. I helped test the project on the display and laptops and worked with my team to debug and solve some of the issues that arose such as weird background formatting, slide to slide transitions, problems with animations. 
+Contribution: I contributed to the design, brainstorming, coding, testing, and debugging of the project. I helped design and code the html, css, and bootstrap for whale page and final page. I also worked on the javascript portions and helped plan the structure of the kinect motion tracking aspect of the project. I helped test the project on the display and laptops and worked with my team to debug and solve some of the issues that arose such as weird background formatting, slide to slide transitions, problems with animations. 
 
