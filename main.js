@@ -80,8 +80,8 @@ width = $(window).width();
 
 function setup() {
     // Intro whale slide
-    window.location = "/pages/whale_page.html";
-    window.location.pathname == "../pages/whale_page.html"
+    window.location = "/pages/index.html";
+    window.location.pathname == "../pages/imdex.html"
 }
 
 function final_page() {
@@ -171,7 +171,7 @@ function movement() {
         $(".error-messages").text("").fadeIn();
     }
 
-    if(document.URL.includes("whale_page.html")) {
+    if(document.URL.includes("index.html")) {
         console.log("IN HERE")
         setTimeout(() => {
             document.location.href = "../pages/whale_page_2.html";
