@@ -102,7 +102,8 @@ function moveChai () {
         } else {
             clearInterval(fadeEffect);
         }
-    }, 200);
+    }, 2000);
+    sleep(2000)
     window.location = "tea_page_3.html";
 }
 
@@ -119,8 +120,8 @@ function moveSugar () {
         } else {
             clearInterval(fadeEffect);
         }
-    }, 200);
-
+    }, 2000);
+    sleep(2000)
     setTimeout(moveMilk, 3000);
 }
 
@@ -137,7 +138,8 @@ function moveMilk () {
         } else {
             clearInterval(fadeEffect);
         }
-    }, 200);
+    }, 2000);
+    sleep(2000)
     window.location = "tea_page_2.html";
 }
 
@@ -152,7 +154,8 @@ function boilFade () {
         } else {
             clearInterval(fadeEffect);
         }
-    }, 200);
+    }, 2000);
+    sleep(2000)
     window.location = "tea_page_4.html";
 }
 
